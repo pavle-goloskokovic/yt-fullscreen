@@ -27,6 +27,7 @@
     },
     "homepage": "https://github.com/pavle-goloskokovic/yt-fullscreen#readme",
     "devDependencies": {
+        "@types/youtube": "^0.0.50",
         "@typescript-eslint/eslint-plugin": "^7.1.0",
         "css-loader": "^6.10.0",
         "css-minimizer-webpack-plugin": "^6.0.0",
