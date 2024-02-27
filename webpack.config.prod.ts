@@ -21,7 +21,7 @@ export default merge(common, <webpack.Configuration>{
                     },
                     format: {
                         // custom, for removing comments
-                        comments: /^\**!/i
+                        comments: /^!/i
                     }
                 },
                 extractComments: false
