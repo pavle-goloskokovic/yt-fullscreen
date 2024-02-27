@@ -1,5 +1,7 @@
 import '../css/style.css';
 
+import 'url-search-params-polyfill';
+
 declare global {
     interface Window {
         onYouTubeIframeAPIReady: () => void;
@@ -15,25 +17,26 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 // 3. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
-let player: YT.Player;
+// let player: YT.Player;
 window.onYouTubeIframeAPIReady = () =>
 {
-    player = new YT.Player('player', {
-        height: 390,
-        width: 640,
-        videoId: 'M7lc1UVf-VE',
+    /*player =*/ new YT.Player('player', {
+        height: 1080,
+        width: 1920,
+        videoId: new URLSearchParams(location.search).get('v') || 'LXb3EKWsInQ',
         playerVars: {
-            playsinline: 1
+            playsinline: 0,
+            fs: 1
         },
-        events: {
+        /*events: {
             onReady: onPlayerReady,
             onStateChange: onPlayerStateChange,
-        }
+        }*/
     });
 };
 
 // 4. The API will call this function when the video player is ready.
-function onPlayerReady (event: YT.PlayerEvent)
+/*function onPlayerReady (event: YT.PlayerEvent)
 {
     event.target.playVideo();
 }
@@ -53,4 +56,4 @@ function onPlayerStateChange (event: YT.OnStateChangeEvent)
 function stopVideo ()
 {
     player.stopVideo();
-}
+}*/
