@@ -1,7 +1,7 @@
 {
-    "name": "webpack5-typescript-template",
+    "name": "yt-fullscreen",
     "version": "0.1.0",
-    "description": "Webpack5 Typescript template",
+    "description": "YouTube Fullscreen",
     "main": "src/ts/index.ts",
     "scripts": {
         "start": "webpack-dev-server",
@@ -12,28 +12,20 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/pavle-goloskokovic/webpack5-typescript-template.git"
+        "url": "git+https://github.com/pavle-goloskokovic/yt-fullscreen.git"
     },
     "keywords": [
-        "type",
-        "script",
-        "typescript",
-        "javascript",
-        "ejs",
-        "css",
-        "boilerplate",
-        "template",
-        "development",
-        "javascript",
-        "webpack",
-        "webpack5"
+        "youtube",
+        "youtube-api",
+        "fullscreen",
+        "full-screen"
     ],
     "author": "Pavle Goloskoković",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/pavle-goloskokovic/webpack5-typescript-template/issues"
+        "url": "https://github.com/pavle-goloskokovic/yt-fullscreen/issues"
     },
-    "homepage": "https://github.com/pavle-goloskokovic/webpack5-typescript-template#readme",
+    "homepage": "https://github.com/pavle-goloskokovic/yt-fullscreen#readme",
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^7.1.0",
         "css-loader": "^6.10.0",
